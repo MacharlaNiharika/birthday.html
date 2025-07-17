@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday Dad 🎂</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1f4037, #99f2c8);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    .cake {
+      max-width: 250px;
+      margin: 20px auto;
+    }
+    .heart {
+      color: red;
+      font-size: 2rem;
+      animation: heartbeat 1s infinite;
+    }
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    .btn {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      background: #ff7675;
+      border: none;
+      color: white;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #d63031;
+    }
+    #message {
+      margin-top: 30px;
+      font-size: 1.3rem;
+      display: none;
+      animation: fadeIn 1.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Birthday, Dad! 🎉</h1>
+  <p>You are my hero, my role model, and my best friend. Thank you for everything you do for me!</p>
+  <div class="heart">❤️</div>
+  <img class="cake" src="https://cdn.pixabay.com/photo/2016/04/01/11/11/birthday-1303957_1280.png" alt="Birthday Cake">
+  
+  <button class="btn" onclick="showMessage()">Click for a Surprise Message!</button>
+  <div id="message">🎁 You mean the world to me, Dad! I hope your birthday is as wonderful as you are! 💙</div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+</body>
+</html>
